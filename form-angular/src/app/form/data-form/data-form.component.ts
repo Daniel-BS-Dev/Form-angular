@@ -9,7 +9,11 @@ export class DataFormComponent implements OnInit {
 
   user: any = {
     name: '',
-    email:''
+    email:'',
+    cep:'',
+    Component:'',
+    rua:'',
+    numero:''
   }
 
   constructor() { }

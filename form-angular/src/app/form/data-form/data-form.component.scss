@@ -7,7 +7,6 @@
 
 
 .content{
-    width: 50%;
     display: table;
     box-shadow: 3px 3px 20px black;
     padding: 40px 20px;
@@ -20,12 +19,12 @@
     }
 
     .button{
-        margin-top: 20px;
+        margin-top: 40px;
         display: flex;
         justify-content: flex-end;
 
         button{
-            width: 150px;
+            width: 250px;
         }
         
     }
@@ -35,6 +34,27 @@
 .input-email{
     margin-top: 15px;
 }
+
+.container-input{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    input{
+        flex: 1;
+    }
+}
+
+.container-input input:nth-child(1){
+    border: solid red;
+    margin: 0px 5px;
+}
+
+.input-rua{
+    margin-top: 20px;
+}
+
+
 
 // campo de validação
 //.ng-invalid.ng-touched:not(form){
