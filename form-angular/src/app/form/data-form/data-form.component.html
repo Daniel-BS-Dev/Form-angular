@@ -1,0 +1,23 @@
+<form class="container" (ngSubmit)="onSubmit()"> 
+    <div class="form-group content"
+    [class.has-error]="!name.valid && name.touched"
+    [class.has-feedback]="!name.valid && name.touched"
+    >
+        <label for="name" class="control-label">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Name" class="form-control" [(ngModel)]="user.name"
+        required #name="ngModel">
+
+        <div *ngIf="!name.valid && name.touched" 
+        class="alert alert-danger" role="alert">Campo obrigatório</div>
+
+
+        <label for="email" class="input-email">Email</label>
+        <input type="email" name="email" id="email" placeholder="nome@gmail.com" class="form-control" [(ngModel)]="user.email"
+        required email #email="ngModel">
+
+        <div *ngIf="!email.valid && email.touched"
+        class="alert alert-danger" role="alert">Campo obrigatório</div>
+
+       <div class="button"><button class="btn btn-primary">Enviar</button></div>
+    </div>
+</form>

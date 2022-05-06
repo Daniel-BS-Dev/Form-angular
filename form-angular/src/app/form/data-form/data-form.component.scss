@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.content{
+    width: 50%;
+    display: table;
+    box-shadow: 3px 3px 20px black;
+    padding: 40px 20px;
+    border-radius: 10px;
+
+    label{
+        font-weight: 900;
+        font-family: roboto;
+        font-size: 20px;
+    }
+
+    .button{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        button{
+            width: 150px;
+        }
+        
+    }
+    
+}
+
+.input-email{
+    margin-top: 15px;
+}
+
+// campo de validação
+//.ng-invalid.ng-touched:not(form){
+//    border: 1px solid red;
+//}

@@ -1,0 +1,33 @@
+.header-container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: black;
+ opacity: 0.8;
+ padding-left: 30px;
+ color: aliceblue;
+
+ nav{
+
+    padding-left: 20px;
+    a{
+        color: aliceblue;
+        padding: 20px 50px;
+    }
+
+    
+.active {
+    border: 2px solid black;
+    height: 100%;
+    background: skyblue;
+  
+  
+    a{
+        color: black;
+        font-weight: 900;
+    }
+
+ }
+
+}
+}
