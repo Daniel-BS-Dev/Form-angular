@@ -52,9 +52,10 @@
           type="text"
           name="cep"
           class="form-control"
-          [(ngModel)]="user.cep"
+          ngModel
           required
           #cep="ngModel"
+          (blur)="consultaCEP()"
         />
         <div
         *ngIf="!cep.valid && cep.touched"

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-template',
@@ -7,8 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
 
-  constructor() { }
+  formulario: FormGroup
 
+  /* uma forma de iniciar a variavel form
+  constructor() { 
+    this.formulario = new FormGroup({
+      name: new FormControl(''),
+      email:new FormControl('')
+    })
+  }
+*/
+
+constructor(private form: FormBuilder) { 
+  this.formulario = this.form.group({
+    name: [''],
+    email:['']
+  })
+}
   ngOnInit(): void {
   }
 
